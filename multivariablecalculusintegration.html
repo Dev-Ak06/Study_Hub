@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Module 4 - Multivariable Calculus - Integration | Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Module IV: Multivariable Calculus</h1>
+    <p>Engineering Mathematics | First Year B.Tech CSE</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mathematics.html">Mathematics</a>
+</nav>
+
+<main>
+
+<!-- TOPIC 1 -->
+
+<section>
+    <h2>1. Double Integrals</h2>
+
+    <h3>What is a Double Integral?</h3>
+
+    <p>
+        A double integral is used to integrate a function
+        of two variables over a two-dimensional region.
+        It can be used to calculate the volume under a
+        surface.
+    </p>
+
+    <h3>Notation</h3>
+
+    <p>∬R f(x,y) dA</p>
+
+    <p>
+        Here, R represents the region of integration and
+        dA represents a small area element.
+    </p>
+
+    <h3>Types of Double Integrals</h3>
+
+    <ul>
+        <li>Type I: Integration with respect to y first.</li>
+        <li>Type II: Integration with respect to x first.</li>
+    </ul>
+
+    <h3>Solved Example 1</h3>
+
+    <p>Evaluate:</p>
+
+    <p>
+        ∫₀¹ ∫₀² (x + y) dy dx
+    </p>
+
+    <h4>Step 1: Integrate with respect to y</h4>
+
+    <p>
+        ∫₀² (x + y) dy
+    </p>
+
+    <p>
+        = [xy + y²/2]₀²
+    </p>
+
+    <p>
+        = 2x + 2
+    </p>
+
+    <h4>Step 2: Integrate the result with respect to x</h4>
+
+    <p>
+        ∫₀¹ (2x + 2) dx
+    </p>
+
+    <p>
+        = [x² + 2x]₀¹
+    </p>
+
+    <p>
+        = 1 + 2 = 3
+    </p>
+
+    <p><strong>Answer: 3</strong></p>
+</section>
+
+
+<!-- TOPIC 2 -->
+
+<section>
+    <h2>2. Triple Integrals</h2>
+
+    <h3>What is a Triple Integral?</h3>
+
+    <p>
+        A triple integral integrates a function of three
+        variables over a three-dimensional region.
+    </p>
+
+    <p>
+        It is useful for finding the volume of a solid
+        and, in suitable applications, its mass.
+    </p>
+
+    <h3>Notation</h3>
+
+    <p>∭V f(x,y,z) dV</p>
+
+    <h3>Solved Example 2</h3>
+
+    <p>Evaluate:</p>
+
+    <p>
+        ∫₀¹ ∫₀¹ ∫₀¹ 1 dz dy dx
+    </p>
+
+    <h4>Step 1: Integrate with respect to z</h4>
+
+    <p>
+        ∫₀¹ 1 dz = [z]₀¹ = 1
+    </p>
+
+    <h4>Step 2: Integrate with respect to y</h4>
+
+    <p>
+        ∫₀¹ 1 dy = 1
+    </p>
+
+    <h4>Step 3: Integrate with respect to x</h4>
+
+    <p>
+        ∫₀¹ 1 dx = 1
+    </p>
+
+    <p><strong>Answer: 1 cubic unit</strong></p>
+
+    <p>
+        This result represents the volume of a unit cube.
+    </p>
+</section>
+
+
+<!-- TOPIC 3 -->
+
+<section>
+    <h2>3. Change of Order of Integration</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        Changing the order of integration means changing
+        the sequence of integration variables and adjusting
+        the limits to describe the same region.
+    </p>
+
+    <p>
+        For example, an integral written as
+        dy dx may sometimes be rewritten as dx dy.
+    </p>
+
+    <h3>Important Rule</h3>
+
+    <p>
+        You must first understand and draw the region of
+        integration. Then determine the new limits from
+        the same region.
+    </p>
+
+    <h3>Solved Example 3</h3>
+
+    <p>Evaluate:</p>
+
+    <p>
+        ∫₀¹ ∫₀ˣ 1 dy dx
+    </p>
+
+    <h4>Step 1: Understand the limits</h4>
+
+    <p>
+        The limits indicate:
+    </p>
+
+    <ul>
+        <li>0 ≤ x ≤ 1</li>
+        <li>0 ≤ y ≤ x</li>
+    </ul>
+
+    <p>
+        This is the triangular region below y = x,
+        above y = 0, and between x = 0 and x = 1.
+    </p>
+
+    <h4>Step 2: Reverse the order</h4>
+
+    <p>
+        When integrating with respect to x first:
+    </p>
+
+    <p>
+        0 ≤ y ≤ 1, and y ≤ x ≤ 1
+    </p>
+
+    <p>
+        The new integral is:
+    </p>
+
+    <p>
+        ∫₀¹ ∫ᵧ¹ 1 dx dy
+    </p>
+
+    <h4>Step 3: Evaluate the original integral</h4>
+
+    <p>
+        ∫₀¹ [y]₀ˣ dx
+        = ∫₀¹ x dx
+    </p>
+
+    <p>
+        = [x²/2]₀¹ = 1/2
+    </p>
+
+    <h4>Step 4: Check the reversed integral</h4>
+
+    <p>
+        ∫₀¹ [x]ᵧ¹ dy
+        = ∫₀¹ (1 - y) dy
+    </p>
+
+    <p>
+        = [y - y²/2]₀¹ = 1/2
+    </p>
+
+    <p><strong>Answer: 1/2</strong></p>
+
+    <p>
+        Both orders give the same answer because the
+        integration region remains unchanged.
+    </p>
+</section>
+
+
+<!-- TOPIC 4 -->
+
+<section>
+    <h2>4. Line Integrals</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A line integral integrates a function along a
+        curve or path.
+    </p>
+
+    <p>
+        It is used in applications such as calculating
+        work done by a force along a path.
+    </p>
+
+    <h3>Scalar Line Integral</h3>
+
+    <p>
+        ∫C f(x,y) ds
+    </p>
+
+    <p>
+        Here, C is the curve and ds is a small length
+        element along that curve.
+    </p>
+
+    <h3>Solved Example 4</h3>
+
+    <p>
+        Evaluate ∫C x ds along the straight line
+        from (0,0) to (1,0).
+    </p>
+
+    <h4>Step 1: Parametrize the line</h4>
+
+    <p>
+        Let x = t and y = 0, where 0 ≤ t ≤ 1.
+    </p>
+
+    <h4>Step 2: Calculate ds</h4>
+
+    <p>
+        ds = √((dx/dt)² + (dy/dt)²) dt
+    </p>
+
+    <p>
+        Since dx/dt = 1 and dy/dt = 0:
+    </p>
+
+    <p>ds = dt</p>
+
+    <h4>Step 3: Substitute into the integral</h4>
+
+    <p>
+        ∫₀¹ t dt = [t²/2]₀¹
+    </p>
+
+    <p><strong>Answer: 1/2</strong></p>
+</section>
+
+
+<!-- TOPIC 5 -->
+
+<section>
+    <h2>5. Surface Integrals</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A surface integral integrates a scalar function
+        or a vector field over a surface in three-dimensional
+        space.
+    </p>
+
+    <p>
+        A scalar surface integral can be written as:
+    </p>
+
+    <p>∬S f(x,y,z) dS</p>
+
+    <p>
+        A vector surface integral is often used to calculate
+        flux through a surface.
+    </p>
+
+    <h3>Solved Example 5</h3>
+
+    <p>
+        Evaluate ∬S 1 dS for a rectangle in the xy-plane
+        with 0 ≤ x ≤ 2 and 0 ≤ y ≤ 3.
+    </p>
+
+    <h4>Step 1: Identify the surface</h4>
+
+    <p>
+        The rectangle lies in the xy-plane, so
+        dS = dx dy.
+    </p>
+
+    <h4>Step 2: Set up the integral</h4>
+
+    <p>
+        ∫₀² ∫₀³ 1 dy dx
+    </p>
+
+    <h4>Step 3: Evaluate</h4>
+
+    <p>
+        ∫₀² [y]₀³ dx
+        = ∫₀² 3 dx
+    </p>
+
+    <p>
+        = [3x]₀² = 6
+    </p>
+
+    <p><strong>Answer: 6 square units</strong></p>
+</section>
+
+
+<!-- TOPIC 6 -->
+
+<section>
+    <h2>6. Volume Integrals</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        Volume integrals integrate a function throughout
+        a three-dimensional region.
+    </p>
+
+    <p>
+        When the integrand is 1, a triple integral calculates
+        the volume of the region.
+    </p>
+
+    <h3>Solved Example 6</h3>
+
+    <p>
+        Find the volume of the rectangular solid:
+    </p>
+
+    <p>
+        0 ≤ x ≤ 2, 0 ≤ y ≤ 3, 0 ≤ z ≤ 4
+    </p>
+
+    <h4>Step 1: Set up the triple integral</h4>
+
+    <p>
+        V = ∫₀² ∫₀³ ∫₀⁴ 1 dz dy dx
+    </p>
+
+    <h4>Step 2: Integrate with respect to z</h4>
+
+    <p>
+        ∫₀⁴ 1 dz = 4
+    </p>
+
+    <h4>Step 3: Integrate with respect to y</h4>
+
+    <p>
+        ∫₀³ 4 dy = 12
+    </p>
+
+    <h4>Step 4: Integrate with respect to x</h4>
+
+    <p>
+        ∫₀² 12 dx = 24
+    </p>
+
+    <p><strong>Answer: 24 cubic units</strong></p>
+</section>
+
+
+<!-- TOPIC 7 -->
+
+<section>
+    <h2>7. Change of Variables</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        Change of variables replaces the original variables
+        with new variables to make an integral easier to
+        evaluate.
+    </p>
+
+    <p>
+        In double integrals, changing from x,y to u,v
+        requires a Jacobian factor.
+    </p>
+
+    <h3>Jacobian Formula</h3>
+
+    <p>
+        dx dy = |∂(x,y)/∂(u,v)| du dv
+    </p>
+
+    <p>
+        The absolute value of the Jacobian is used in
+        the area element.
+    </p>
+
+    <h3>Common Polar Coordinate Formulas</h3>
+
+    <ul>
+        <li>x = r cos θ</li>
+        <li>y = r sin θ</li>
+        <li>x² + y² = r²</li>
+        <li>dA = r dr dθ</li>
+    </ul>
+
+    <h3>Solved Example 7</h3>
+
+    <p>Evaluate:</p>
+
+    <p>
+        ∬R (x² + y²) dA
+    </p>
+
+    <p>
+        where R is the unit disk x² + y² ≤ 1.
+    </p>
+
+    <h4>Step 1: Change to polar coordinates</h4>
+
+    <p>
+        x² + y² = r² and dA = r dr dθ.
+    </p>
+
+    <p>
+        The limits are 0 ≤ r ≤ 1 and 0 ≤ θ ≤ 2π.
+    </p>
+
+    <h4>Step 2: Write the new integral</h4>
+
+    <p>
+        ∫₀²π ∫₀¹ r³ dr dθ
+    </p>
+
+    <h4>Step 3: Integrate with respect to r</h4>
+
+    <p>
+        ∫₀¹ r³ dr = [r⁴/4]₀¹ = 1/4
+    </p>
+
+    <h4>Step 4: Integrate with respect to θ</h4>
+
+    <p>
+        ∫₀²π (1/4) dθ = π/2
+    </p>
+
+    <p><strong>Answer: π/2</strong></p>
+</section>
+
+
+<!-- PRACTICE QUESTIONS -->
+
+<section>
+    <h2>Practice Questions</h2>
+
+    <ol>
+        <li>Evaluate ∫₀¹ ∫₀² (2x + y) dy dx.</li>
+
+        <li>Evaluate ∫₀¹ ∫₀ˣ y dy dx.</li>
+
+        <li>Evaluate ∫₀¹ ∫₀¹ ∫₀² 1 dz dy dx.</li>
+
+        <li>Evaluate ∫C y ds along the line from (0,0) to (0,2).</li>
+
+        <li>Find the area of the rectangle 0 ≤ x ≤ 4, 0 ≤ y ≤ 5 using a double integral.</li>
+
+        <li>
+            Convert x² + y² into polar coordinates and
+            state the area element dA.
+        </li>
+
+        <li>
+            Evaluate ∬R (x² + y²) dA over the unit disk
+            using polar coordinates.
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>Module 4: Quick Revision</h2>
+
+    <ul>
+        <li>Double integrals: integration over a 2D region.</li>
+        <li>Triple integrals: integration over a 3D region.</li>
+        <li>Change of order: adjust limits to preserve the region.</li>
+        <li>Line integrals: integration along a curve.</li>
+        <li>Surface integrals: integration over a surface.</li>
+        <li>Volume integrals: integration throughout a solid.</li>
+        <li>Change of variables: transform variables and include the Jacobian.</li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>Study Hub | Learn step by step</p>
+    <a href="mathematics.html">Back to Mathematics</a>
+</footer>
+
+</body>
+</html>

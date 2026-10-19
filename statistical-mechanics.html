@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistical Mechanics | Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Study Hub</h1>
+    <p>Engineering Physics - Module 3</p>
+</header>
+
+<main>
+
+    <h1>3.03 Statistical Mechanics</h1>
+
+    <p>
+        Statistical mechanics is a branch of physics that explains the
+        macroscopic properties of a system using the statistical behaviour
+        of its microscopic particles.
+    </p>
+
+    <p>
+        It connects the behaviour of atoms, molecules and other particles
+        with measurable quantities such as temperature, pressure and energy.
+    </p>
+
+    <hr>
+
+    <!-- TOPIC 1 -->
+
+    <h2>1. Concept of Energy Levels and Energy States</h2>
+
+    <h3>Energy Level</h3>
+
+    <p>
+        An energy level is an allowed value of energy that a quantum system
+        can possess. In many quantum systems, energy is quantized, meaning
+        that only certain energy values are permitted.
+    </p>
+
+    <h3>Energy State</h3>
+
+    <p>
+        An energy state describes a particular quantum state of a system.
+        Different quantum states can sometimes have the same energy.
+        Such states are called degenerate states.
+    </p>
+
+    <p><strong>Example:</strong></p>
+
+    <p>
+        An atom may have a ground state with the lowest allowed energy
+        and excited states with higher energies.
+    </p>
+
+    <h3>Important Terms</h3>
+
+    <ul>
+        <li>Ground state: the lowest-energy state.</li>
+        <li>Excited state: a state with energy higher than the ground state.</li>
+        <li>Energy difference: the difference between two allowed energy levels.</li>
+        <li>Degeneracy: more than one state having the same energy.</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 2 -->
+
+    <h2>2. Phase Space</h2>
+
+    <p>
+        Phase space is a mathematical space used to represent the position
+        and momentum of a particle or system.
+    </p>
+
+    <p>
+        For one particle moving along the x-axis, a point in phase space
+        is specified by its position x and momentum p.
+    </p>
+
+    <p><strong>Phase-space coordinates: (x, p)</strong></p>
+
+    <p>
+        For a particle moving in three dimensions, the coordinates are:
+    </p>
+
+    <p><strong>(x, y, z, pₓ, pᵧ, p_z)</strong></p>
+
+    <p>
+        Therefore, the phase space of one particle in three dimensions
+        has six dimensions: three position coordinates and three momentum
+        coordinates.
+    </p>
+
+    <h3>Importance of Phase Space</h3>
+
+    <ul>
+        <li>It represents the possible states of a physical system.</li>
+        <li>It helps describe the motion of particles.</li>
+        <li>It is useful in classical and statistical mechanics.</li>
+        <li>A point represents a specified position and momentum.</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 3 -->
+
+    <h2>3. Microstates and Macrostates</h2>
+
+    <h3>Microstate</h3>
+
+    <p>
+        A microstate is a detailed description of the microscopic state
+        of a system, including the states occupied by its individual particles.
+    </p>
+
+    <h3>Macrostate</h3>
+
+    <p>
+        A macrostate describes a system using macroscopic quantities
+        such as total energy, pressure, volume and temperature.
+    </p>
+
+    <h3>Example: Two Particles in Two Energy Levels</h3>
+
+    <p>
+        Consider two distinguishable particles, A and B, and two energy
+        levels, E₀ and E₁.
+    </p>
+
+    <p>Possible arrangements include:</p>
+
+    <ul>
+        <li>A in E₀ and B in E₀.</li>
+        <li>A in E₀ and B in E₁.</li>
+        <li>A in E₁ and B in E₀.</li>
+        <li>A in E₁ and B in E₁.</li>
+    </ul>
+
+    <p>
+        The detailed arrangements are microstates. A macrostate groups
+        microscopic arrangements according to specified macroscopic
+        conditions, such as the total energy.
+    </p>
+
+    <h3>Difference Between Microstate and Macrostate</h3>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Microstate</th>
+            <th>Macrostate</th>
+        </tr>
+        <tr>
+            <td>Detailed microscopic arrangement.</td>
+            <td>Overall macroscopic condition.</td>
+        </tr>
+        <tr>
+            <td>Describes individual particle states.</td>
+            <td>Describes quantities such as energy and temperature.</td>
+        </tr>
+        <tr>
+            <td>Several microstates may correspond to one macrostate.</td>
+            <td>Can represent many possible microstates.</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- TOPIC 4 -->
+
+    <h2>4. Thermodynamic Probability</h2>
+
+    <p>
+        Thermodynamic probability, commonly represented by W or Ω,
+        is the number of microscopic arrangements corresponding to a
+        particular macrostate.
+    </p>
+
+    <p>
+        It is a count of possible arrangements, not an ordinary probability
+        between zero and one.
+    </p>
+
+    <h3>Formula for Maxwell–Boltzmann Arrangements</h3>
+
+    <p>
+        For N distinguishable particles distributed among energy levels,
+        with nᵢ particles in level i and degeneracy gᵢ, the number of
+        arrangements is:
+    </p>
+
+    <p>
+        <strong>W = N! / (n₁! n₂! n₃! ...)</strong>
+    </p>
+
+    <p>
+        This formula applies to the distribution of distinguishable
+        particles among specified groups. If the energy levels have
+        degeneracies, the corresponding state multiplicities must also
+        be included.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>
+        Three distinguishable particles are distributed between two
+        energy levels. If two particles are in the first level and one
+        is in the second level:
+    </p>
+
+    <p>W = 3! / (2! 1!)</p>
+
+    <p>W = 6 / 2 = 3</p>
+
+    <p><strong>Answer: 3 arrangements.</strong></p>
+
+    <h3>Connection with Entropy</h3>
+
+    <p>
+        Boltzmann's entropy formula connects thermodynamic probability
+        with entropy:
+    </p>
+
+    <p><strong>S = kB ln W</strong></p>
+
+    <p>Where:</p>
+
+    <ul>
+        <li>S = entropy</li>
+        <li>kB = Boltzmann constant = 1.381 × 10⁻²³ J/K</li>
+        <li>W = thermodynamic probability</li>
+        <li>ln = natural logarithm</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 5 -->
+
+    <h2>5. Maxwell–Boltzmann (MB) Statistics</h2>
+
+    <p>
+        Maxwell–Boltzmann statistics describes the distribution of
+        classical, distinguishable particles among available energy states.
+    </p>
+
+    <p>
+        It is suitable when quantum effects are negligible, such as in
+        many ordinary dilute gases at sufficiently high temperatures.
+    </p>
+
+    <h3>Main Characteristics</h3>
+
+    <ul>
+        <li>Particles are treated as distinguishable.</li>
+        <li>There is no quantum restriction limiting the number of particles in a state.</li>
+        <li>It is commonly used for classical ideal gases.</li>
+        <li>It is a good approximation in the classical dilute-gas limit.</li>
+    </ul>
+
+    <h3>Distribution Formula</h3>
+
+    <p>
+        For particles distributed among energy levels, the MB occupation
+        is proportional to:
+    </p>
+
+    <p><strong>nᵢ ∝ gᵢ e<sup>−Eᵢ/(kBT)</sup></strong></p>
+
+    <p>
+        The normalized average occupation per single-particle state is:
+    </p>
+
+    <p><strong>fMB(E) = e<sup>−(E−μ)/(kBT)</sup></strong></p>
+
+    <p>
+        Here μ is the chemical potential. In the classical limit,
+        the occupation per individual state is much smaller than one.
+    </p>
+
+    <h3>Boltzmann Factor</h3>
+
+    <p><strong>Boltzmann factor = e<sup>−E/(kBT)</sup></strong></p>
+
+    <p>
+        Higher-energy states are generally less populated at thermal
+        equilibrium than lower-energy states, all else being equal.
+    </p>
+
+    <hr>
+
+    <!-- TOPIC 6 -->
+
+    <h2>6. Bose–Einstein (BE) Statistics</h2>
+
+    <p>
+        Bose–Einstein statistics describes indistinguishable particles
+        called bosons.
+    </p>
+
+    <p>
+        Bosons have integer spin and are not restricted by the
+        Pauli exclusion principle. Multiple bosons can occupy the
+        same single-particle quantum state.
+    </p>
+
+    <h3>Examples of Bosons</h3>
+
+    <ul>
+        <li>Photons</li>
+        <li>Gluons</li>
+        <li>Helium-4 atoms, treated as composite bosons in suitable conditions</li>
+    </ul>
+
+    <h3>BE Distribution Formula</h3>
+
+    <p>
+        The average occupation number of a single-particle state with
+        energy E is:
+    </p>
+
+    <p>
+        <strong>fBE(E) = 1 / [e<sup>(E−μ)/(kBT)</sup> − 1]</strong>
+    </p>
+
+    <p>Where:</p>
+
+    <ul>
+        <li>E = energy of the state</li>
+        <li>μ = chemical potential</li>
+        <li>kB = Boltzmann constant</li>
+        <li>T = absolute temperature</li>
+    </ul>
+
+    <h3>Main Characteristics</h3>
+
+    <ul>
+        <li>Bosons are indistinguishable particles.</li>
+        <li>Any number of bosons may occupy one quantum state.</li>
+        <li>BE statistics explains the distribution of photons in black-body radiation.</li>
+        <li>It is important in phenomena such as Bose–Einstein condensation.</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 7 -->
+
+    <h2>7. Fermi–Dirac (FD) Statistics</h2>
+
+    <p>
+        Fermi–Dirac statistics describes indistinguishable particles
+        called fermions.
+    </p>
+
+    <p>
+        Fermions have half-integer spin and obey the Pauli exclusion
+        principle. Each individual quantum state can be occupied by
+        at most one fermion.
+    </p>
+
+    <h3>Examples of Fermions</h3>
+
+    <ul>
+        <li>Electrons</li>
+        <li>Protons</li>
+        <li>Neutrons</li>
+    </ul>
+
+    <h3>FD Distribution Formula</h3>
+
+    <p>
+        The average occupation number of a single-particle state with
+        energy E is:
+    </p>
+
+    <p>
+        <strong>fFD(E) = 1 / [e<sup>(E−μ)/(kBT)</sup> + 1]</strong>
+    </p>
+
+    <p>
+        The occupation probability of a single state lies between
+        zero and one.
+    </p>
+
+    <h3>Main Characteristics</h3>
+
+    <ul>
+        <li>Fermions are indistinguishable particles.</li>
+        <li>Each single-particle state can contain at most one fermion.</li>
+        <li>Electrons in solids follow FD statistics.</li>
+        <li>It helps explain the behaviour of electrons in metals and semiconductors.</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 8 -->
+
+    <h2>8. Comparison of MB, BE and FD Statistics</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Property</th>
+            <th>MB Statistics</th>
+            <th>BE Statistics</th>
+            <th>FD Statistics</th>
+        </tr>
+
+        <tr>
+            <td>Particles</td>
+            <td>Classical particles</td>
+            <td>Bosons</td>
+            <td>Fermions</td>
+        </tr>
+
+        <tr>
+            <td>Distinguishability</td>
+            <td>Distinguishable</td>
+            <td>Indistinguishable</td>
+            <td>Indistinguishable</td>
+        </tr>
+
+        <tr>
+            <td>Spin</td>
+            <td>Classical description</td>
+            <td>Integer spin</td>
+            <td>Half-integer spin</td>
+        </tr>
+
+        <tr>
+            <td>Maximum occupation of one state</td>
+            <td>No quantum restriction</td>
+            <td>No fixed upper limit</td>
+            <td>One particle</td>
+        </tr>
+
+        <tr>
+            <td>Distribution denominator</td>
+            <td>Exponential factor</td>
+            <td>Exponential factor − 1</td>
+            <td>Exponential factor + 1</td>
+        </tr>
+
+        <tr>
+            <td>Typical application</td>
+            <td>Dilute classical gas</td>
+            <td>Photons and bosons</td>
+            <td>Electrons in solids</td>
+        </tr>
+    </table>
+
+    <h3>Remember the Formulas</h3>
+
+    <p><strong>MB:</strong> fMB(E) = e<sup>−(E−μ)/(kBT)</sup></p>
+
+    <p><strong>BE:</strong> fBE(E) = 1 / [e<sup>(E−μ)/(kBT)</sup> − 1]</p>
+
+    <p><strong>FD:</strong> fFD(E) = 1 / [e<sup>(E−μ)/(kBT)</sup> + 1]</p>
+
+    <p>
+        The minus sign in the BE denominator

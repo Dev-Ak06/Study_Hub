@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Engineering Physics Module 1 - Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Study Hub</h1>
+        <p>Engineering Physics | Module 1</p>
+    </header>
+
+    <main>
+        
+
+        <h2>Module 1: Laser, Fibre Optics and Holography</h2>
+
+        <p>
+            Welcome to Module 1 of Engineering Physics.
+            This page contains explanations, important formulas
+            and applications for first-year engineering students.
+        </p>
+
+        <hr>
+
+        <!-- LASER -->
+
+        <section id="laser">
+
+            <h2>1.01 Laser</h2>
+
+            <h3>Contents</h3>
+
+            <ol>
+                <li>Emission and Absorption Processes</li>
+                <li>Einstein A and B Coefficients</li>
+                <li>Working Principle of Laser</li>
+                <li>Metastable State</li>
+                <li>Population Inversion</li>
+                <li>Conditions for Laser Action</li>
+                <li>Optical Resonator</li>
+                <li>Ruby Laser</li>
+                <li>He-Ne Laser</li>
+                <li>Semiconductor Laser</li>
+                <li>Applications of Laser</li>
+                <li>Numerical Problems</li>
+            </ol>
+
+            <hr>
+
+            <h3>1. Emission and Absorption Processes</h3>
+
+            <h4>Absorption</h4>
+
+            <p>
+                Absorption occurs when an atom absorbs a photon
+                and moves from a lower energy level E1 to a
+                higher energy level E2.
+            </p>
+
+            <p><strong>Energy equation:</strong> E1 + hν = E2</p>
+
+            <h4>Spontaneous Emission</h4>
+
+            <p>
+                Spontaneous emission occurs when an excited atom
+                returns to a lower energy level on its own and
+                emits a photon.
+            </p>
+
+            <p><strong>Energy equation:</strong> E2 = E1 + hν</p>
+
+            <h4>Stimulated Emission</h4>
+
+            <p>
+                Stimulated emission occurs when an incoming photon
+                causes an excited atom to emit another photon.
+            </p>
+
+            <p><strong>Energy equation:</strong> E2 = E1 + hν</p>
+
+            <p>In stimulated emission, the two photons have the same:</p>
+
+            <ul>
+                <li>Frequency</li>
+                <li>Phase</li>
+                <li>Direction of propagation</li>
+            </ul>
+
+            <hr>
+
+            <h3>2. Einstein A and B Coefficients</h3>
+
+            <p>
+                Einstein coefficients describe the probabilities
+                of absorption and emission of radiation by atoms.
+            </p>
+
+            <h4>Einstein A Coefficient</h4>
+
+            <p>
+                A21 represents the probability of spontaneous
+                emission per unit time.
+            </p>
+
+            <h4>Einstein B12 Coefficient</h4>
+
+            <p>
+                B12 represents the probability of absorption
+                due to incident radiation.
+            </p>
+
+            <h4>Einstein B21 Coefficient</h4>
+
+            <p>
+                B21 represents the probability of stimulated
+                emission due to incident radiation.
+            </p>
+
+            <h4>Important Relations</h4>
+
+            <p>Energy difference: E2 - E1 = hν</p>
+
+            <p>
+                For non-degenerate energy levels:
+                B12 = B21
+            </p>
+            <p> Einstein First relation: B12 = B21</p>
+
+            <h3>Derivation of Einstein's Second Equation</h3>
+
+            <p>Consider two energy levels E1 and E2, where E2 > E1.</p>
+            
+            <p><b>1. Rate of Absorption:</b></p>
+            <p>R12 = N1 B12 ρ(ν)</p>
+            
+            <p><b>2. Rate of Spontaneous Emission:</b></p>
+            <p>R21 = N2 A21</p>
+            
+            <p><b>3. Rate of Stimulated Emission:</b></p>
+            <p>R21 = N2 B21 ρ(ν)</p>
+            
+            <p>At thermal equilibrium:</p>
+            
+            <p>N1 B12 ρ(ν) = N2 A21 + N2 B21 ρ(ν)</p>
+            
+            <p>Rearranging:</p>
+            
+            <p>ρ(ν) = A21 / [B12(N1/N2) − B21]</p>
+            
+            <p>Using Boltzmann distribution and Planck's radiation law, we obtain:</p>
+            
+            <p><b>A21 / B21 = 8πhν³ / c³</b></p>
+            
+            <p><b>Hence proved.</b></p>
+
+            
+
+            <hr>
+
+            <h3>3. Working Principle of Laser</h3>
+
+            <p>
+                LASER stands for Light Amplification by
+                Stimulated Emission of Radiation.
+            </p>
+
+            <p>
+                A laser works on the principle of stimulated
+                emission. It produces a highly directional,
+                coherent and nearly monochromatic beam of light.
+            </p>
+
+            <h4>Main Components</h4>
+
+            <ul>
+                <li>Active medium</li>
+                <li>Pumping source</li>
+                <li>Optical resonator</li>
+            </ul>
+
+            <h4>Working</h4>
+
+            <ol>
+                <li>Energy is supplied to the active medium.</li>
+                <li>Atoms are excited to higher energy states.</li>
+                <li>Population inversion is achieved.</li>
+                <li>Stimulated emission amplifies the light.</li>
+                <li>The laser beam emerges through the partially reflecting mirror.</li>
+            </ol>
+
+            <hr>
+
+            <h3>4. Metastable State</h3>
+
+            <p>
+                A metastable state is an excited energy state
+                in which atoms remain for a comparatively longer
+                time than in ordinary excited states.
+            </p>
+
+            <p>
+                It helps atoms accumulate in the excited state
+                and makes population inversion possible.
+            </p>
+
+            <hr>
+
+            <h3>5. Population Inversion</h3>
+
+            <p>
+                Population inversion is the condition in which
+                the number of atoms in a higher energy state
+                exceeds the number in the lower energy state.
+            </p>
+
+            <p><strong>Condition:</strong> N2 &gt; N1</p>
+
+            <p>
+                Population inversion is necessary for laser action.
+            </p>
+
+            <hr>
+
+            <h3>6. Conditions Necessary for Laser Action</h3>
+
+            <ul>
+                <li>An active medium must be present.</li>
+                <li>A suitable pumping mechanism is required.</li>
+                <li>Population inversion must be achieved.</li>
+                <li>A metastable state is helpful for storing excited atoms.</li>
+                <li>An optical resonator helps amplify light.</li>
+            </ul>
+
+            <hr>
+
+            <h3>7. Optical Resonator</h3>
+
+            <p>
+                An optical resonator consists of two mirrors
+                placed around the active medium.
+            </p>
+
+            <ul>
+                <li>One mirror is highly reflecting.</li>
+                <li>The other mirror is partially reflecting.</li>
+                <li>Light reflects repeatedly through the active medium.</li>
+                <li>A portion of the light exits through the partially reflecting mirror.</li>
+            </ul>
+
+            <hr>
+
+            <h3>8. Ruby Laser</h3>
+
+            <p>
+                A ruby laser is a solid-state, three-level laser.
+                Its active medium is a ruby crystal containing
+                chromium ions.
+            </p>
+
+            <h4>Main Components</h4>
+
+            <ul>
+                <li>Ruby rod</li>
+                <li>Xenon flash lamp</li>
+                <li>Two mirrors forming an optical resonator</li>
+            </ul>
+
+            <h4>Working</h4>
+
+            <ol>
+                <li>The flash lamp supplies energy to the ruby crystal.</li>
+                <li>Chromium ions become excited.</li>
+                <li>Atoms accumulate in a metastable state.</li>
+                <li>Stimulated emission produces laser light.</li>
+            </ol>
+
+            <p>
+                The ruby laser emits red light of approximately
+                694.3 nm wavelength.
+            </p>
+
+            <hr>
+
+            <h3>9. He-Ne Laser</h3>
+
+            <p>
+                A helium-neon laser is a gas laser. Its active
+                medium is a mixture of helium and neon gases.
+            </p>
+
+            <h4>Main Components</h4>
+
+            <ul>
+                <li>Gas discharge tube</li>
+                <li>Helium and neon gas mixture</li>
+                <li>Electrodes</li>
+                <li>Optical resonator</li>
+            </ul>
+
+            <h4>Working</h4>
+
+            <ol>
+                <li>An electric discharge excites helium atoms.</li>
+                <li>Energy is transferred from helium atoms to neon atoms.</li>
+                <li>Population inversion is established in neon.</li>
+                <li>Stimulated emission produces laser light.</li>
+            </ol>
+
+            <p>
+                A common He-Ne laser emits red light at approximately
+                632.8 nm.
+            </p>
+
+            <hr>
+
+            <h3>10. Semiconductor Laser</h3>
+
+            <p>
+                A semiconductor laser uses a semiconductor
+                material as its active medium.
+            </p>
+
+            <p>
+                It commonly uses a forward-biased p-n junction.
+                Electron-hole recombination can produce photons,
+                and stimulated emission amplifies the light.
+            </p>
+
+            <h4>Applications</h4>
+
+            <ul>
+                <li>Optical fibre communication</li>
+                <li>Barcode scanners</li>
+                <li>Laser printers</li>
+                <li>Optical storage devices</li>
+            </ul>
+
+            <hr>
+
+            <h3>11. Applications of Laser</h3>
+
+            <ul>
+                <li>Medical surgery</li>
+                <li>Optical fibre communication</li>
+                <li>Industrial cutting and welding</li>
+                <li>Scientific research</li>
+                <li>Distance measurement</li>
+                <li>Barcode scanning</li>
+            </ul>
+
+            <hr>
+
+            <h3>12. Numerical Problems</h3>
+
+            <p>
+                Photon energy can be calculated using:
+            </p>
+
+            <p><strong>E = hν</strong></p>
+
+            <p>Since ν = c / λ:</p>
+
+            <p><strong>E = hc / λ</strong></p>
+
+            <p>Where:</p>
+
+            <ul>
+                <li>E = photon energy in joules</li>
+                <li>h = Planck's constant = 6.626 × 10⁻³⁴ J s</li>
+                <li>ν = frequency in hertz</li>
+                <li>c = speed of light ≈ 3 × 10⁸ m/s</li>
+                <li>λ = wavelength in metres</li>
+                <h3>Solved Numerical</h3>
+
+<p><b>Question:</b> Calculate the energy of a photon having wavelength 600 nm.</p>
+
+<p><b>Formula:</b> E = hc / λ</p>
+
+<p><b>Given:</b></p>
+<p>h = 6.626 × 10⁻³⁴ J·s</p>
+<p>c = 3 × 10⁸ m/s</p>
+<p>λ = 600 × 10⁻⁹ m</p>
+
+<p><b>Solution:</b></p>
+<p>E = (6.626 × 10⁻³⁴ × 3 × 10⁸) / (600 × 10⁻⁹)</p>
+
+<p><b>Answer:</b> E = 3.313 × 10⁻¹⁹ J</p>
+            </ul>
+<h3>Advanced Solved Numericals - Laser</h3>
+
+<h4>Numerical 1: Photon Energy</h4>
+<p><b>Question:</b> A laser emits light of wavelength 632.8 nm.
+Calculate the energy of one photon in joules and electron volts.</p>
+
+<p><b>Formula:</b> E = hc / λ</p>
+<p>h = 6.626 × 10⁻³⁴ J·s</p>
+<p>c = 3 × 10⁸ m/s</p>
+<p>λ = 632.8 × 10⁻⁹ m</p>
+<p>E = (6.626 × 10⁻³⁴ × 3 × 10⁸) / (632.8 × 10⁻⁹)</p>
+<p>E ≈ 3.14 × 10⁻¹⁹ J</p>
+<p>Since 1 eV = 1.602 × 10⁻¹⁹ J,</p>
+<p><b>Answer:</b> E ≈ 1.96 eV</p>
+
+<hr>
+
+<h4>Numerical 2: Number of Photons</h4>
+<p><b>Question:</b> A laser of wavelength 500 nm emits 2 J of energy.
+Calculate the number of photons emitted.</p>
+
+<p><b>Formula:</b> N = Etotal / Ephoton</p>
+<p>Ephoton = hc / λ</p>
+<p>Ephoton = (6.626 × 10⁻³⁴ × 3 × 10⁸) / (500 × 10⁻⁹)</p>
+<p>Ephoton = 3.976 × 10⁻¹⁹ J</p>
+<p>N = 2 / (3.976 × 10⁻¹⁹)</p>
+<p><b>Answer:</b> N ≈ 5.03 × 10¹⁸ photons</p>
+
+<hr>
+
+<h4>Numerical 3: Laser Power</h4>
+<p><b>Question:</b> A laser emits 5 × 10¹⁸ photons per second.
+If the wavelength is 600 nm, calculate the power of the laser.</p>
+
+<p><b>Formula:</b> P = N × hc / λ</p>
+<p>P = 5 × 10¹⁸ × (6.626 × 10⁻³⁴ × 3 × 10⁸) / (600 × 10⁻⁹)</p>
+<p><b>Answer:</b> P ≈ 1.66 W</p>
+
+<hr>
+
+<h4>Numerical 4: Frequency and Energy Difference</h4>
+<p><b>Question:</b> An electron transition in a laser produces light
+of wavelength 632.8 nm. Calculate the frequency and energy difference
+between the two energy levels.</p>
+
+<p><b>Formula:</b> ν = c / λ</p>
+<p>ν = (3 × 10⁸) / (632.8 × 10⁻⁹)</p>
+<p>ν ≈ 4.74 × 10¹⁴ Hz</p>
+<p>Energy difference: ΔE = hν</p>
+<p>ΔE = 6.626 × 10⁻³⁴ × 4.74 × 10¹⁴</p>
+<p><b>Answer:</b> ΔE ≈ 3.14 × 10⁻¹⁹ J</p>
+
+<hr>
+
+<h4>Numerical 5: Photons Emitted in a Time Interval</h4>
+<p><b>Question:</b> A 10 mW laser operates at a wavelength of 500 nm
+for 2 minutes. Calculate the total number of photons emitted,
+assuming constant power.</p>
+
+<p><b>Given:</b></p>
+<p>P = 10 mW = 0.01 W</p>
+<p>t = 2 minutes = 120 s</p>
+<p>λ = 500 × 10⁻⁹ m</p>
+
+<p><b>Formula:</b> N = Ptλ / hc</p>
+<p>N = (0.01 × 120 × 500 × 10⁻⁹) /
+(6.626 × 10⁻³⁴ × 3 × 10⁸)</p>
+<p><b>Answer:</b> N ≈ 3.02 × 10¹⁹ photons</p>
+        </section>
+
+        <hr>
+
+        <!-- FIBRE OPTICS -->
+
+        <section id="fibre-optics">
+
+            <h2>1.02 Fibre Optics</h2>
+
+            <h3>1. Principle of Optical Fibre</h3>
+
+            <p>
+                An optical fibre is a thin, flexible transparent
+                fibre used to transmit light signals.
+            </p>
+
+            <p>
+                It works on the principle of total internal
+                reflection.
+            </p>
+
+            <h3>2. Structure of an Optical Fibre</h3>
+
+            <ul>
+                <li><strong>Core:</strong> The central region through which light travels.</li>
+                <li><strong>Cladding:</strong> The layer surrounding the core.</li>
+                <li><strong>Protective coating:</strong> Protects the fibre from damage.</li>
+            </ul>
+
+            <p>
+                For total internal reflection, the refractive
+                index of the core must be greater than that
+                of the cladding.
+            </p>
+
+            <h3>3. Types of Optical Fibre</h3>
+
+            <h4>Step-Index Fibre</h4>
+
+            <p>
+                The refractive index changes suddenly at the
+                boundary between the core and the cladding.
+            </p>
+
+            <h4>Graded-Index Fibre</h4>
+
+            <p>
+                The refractive index of the core gradually
+                decreases from the centre towards the cladding.
+            </p>
+
+            <h4>Single-Mode Fibre</h4>
+
+            <p>
+                Single-mode fibre supports one principal
+                propagation mode and is useful for long-distance
+                communication.
+            </p>
+
+            <h4>Multimode Fibre</h4>
+
+            <p>
+                Multimode fibre supports multiple propagation
+                modes.
+            </p>
+
+            <h3>4. Numerical Aperture</h3>
+
+            <p>
+                Numerical aperture describes the light-gathering
+                ability of an optical fibre.
+            </p>
+
+            <p><strong>NA = n₀ sin θa</strong></p>
+
+            <p>
+                For a step-index fibre in air:
+                <strong>NA = √(n₁² - n₂²)</strong>
+            </p>
+
+            <ul>
+                <li>n₁ = refractive index of the core</li>
+                <li>n₂ = refractive index of the cladding</li>
+                <li>n₀ = refractive index of the outside medium</li>
+                <li>θa = acceptance angle</li>
+            </ul>
+
+            <h3>5. Acceptance Angle</h3>
+
+            <p>
+                The acceptance angle is the maximum angle,
+                measured relative to the fibre axis in the
+                external medium, at which light can enter the
+                fibre and still be guided.
+            </p>
+
+            <p>In general: NA = n₀ sin θa</p>
+
+            <h3>6. Losses in Optical Fibre</h3>
+
+            <ul>
+                <li><strong>Absorption loss:</strong> Some optical energy is absorbed by the fibre material.</li>
+                <li><strong>Scattering loss:</strong> Light is scattered due to microscopic variations in the material.</li>
+                <li><strong>Bending loss:</strong> Light escapes when the fibre is bent too sharply.</li>
+            </ul>
+
+            <h3>7. Applications of Optical Fibre</h3>
+
+            <ul>
+                <li>Internet and telecommunications</li>
+                <li>Medical endoscopy</li>
+                <li>Industrial inspection</li>
+                <li>Optical sensors</li>
+            </ul>
+
+            <h3>8. Numerical Formula</h3>
+
+            <p>Numerical aperture:</p>
+
+            <p>NA = √(n₁² - n₂²)</p>
+
+            <p>Acceptance angle in air:</p>
+
+            <p>θa = sin⁻¹(NA)</p>
+
+            <p>
+                These simplified relations apply to a step-index
+                fibre with air outside.
+            </p>
+            <h3>Solved Numerical</h3>
+
+            <p><b>Question:</b> The refractive index of the core is 1.5 and the refractive index of the cladding is 1.4. Calculate the numerical aperture (NA).</p>
+            
+            <p><b>Formula:</b> NA = √(n₁² − n₂²)</p>
+            
+            <p><b>Given:</b></p>
+            <p>Core refractive index, n₁ = 1.5</p>
+            <p>Cladding refractive index, n₂ = 1.4</p>
+            
+            <p><b>Solution:</b></p>
+            <p>NA = √(1.5² − 1.4²)</p>
+            <p>NA = √(2.25 − 1.96)</p>
+            <p>NA = √0.29</p>
+            
+            <p><b>Answer:</b> NA ≈ 0.5385</p>
+        </section>
+
+        <hr>
+
+        <!-- HOLOGRAPHY -->
+
+        <section id="holography">
+
+            <h2>1.03 Holography</h2>
+
+            <h3>1. Definition</h3>
+
+            <p>
+                Holography is a technique used to record and
+                reconstruct the wavefront of light from an object,
+                producing a three-dimensional image effect.
+            </p>
+
+            <h3>2. Principle of Holography</h3>
+
+            <p>
+                Holography uses interference and diffraction
+                of light to record and reconstruct information
+                about an object's light wave.
+            </p>
+
+            <h3>3. Recording a Hologram</h3>
+
+            <ol>
+                <li>Coherent laser light is split into two beams.</li>
+                <li>The object beam illuminates the object.</li>
+                <li>Light from the object reaches the recording plate.</li>
+                <li>The reference beam also reaches the recording plate.</li>
+                <li>The two beams form an interference pattern that is recorded.</li>
+            </ol>
+
+            <h3>4. Viewing a Hologram</h3>
+
+            <p>
+                When the recorded hologram is illuminated
+                appropriately, it diffracts light and reconstructs
+                the wavefront, creating a three-dimensional
+                image effect.
+            </p>
+
+            <h3>5. Applications of Holography</h3>
+
+            <ul>
+                <li>Security labels and authentication</li>
+                <li>Scientific imaging</li>
+                <li>Data storage research</li>
+                <li>Three-dimensional displays</li>
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <p>
+            Study Hub | Engineering Physics | First Year
+        </p>
+
+    </main>
+    <div class="back-button">
+        <a href="physics.html"> Back to physics</a>
+    </div>
+
+</body>
+
+</html>

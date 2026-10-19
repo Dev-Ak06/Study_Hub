@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Module 3 - Multivariable Calculus - Differentiation | Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Module III: Multivariable Calculus</h1>
+    <p>Engineering Mathematics | First Year B.Tech CSE</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="mathematics.html">Mathematics</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>1. Functions of Several Variables</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A function of several variables is a function that
+        depends on two or more independent variables.
+    </p>
+
+    <p>
+        For example, z = x² + y² depends on both x and y.
+        Here, x and y are independent variables, and z is
+        the dependent variable.
+    </p>
+
+    <h3>Solved Example</h3>
+
+    <p>Find z when x = 2 and y = 3.</p>
+
+    <p>Given: z = x² + y²</p>
+
+    <p>Step 1: Substitute x = 2 and y = 3.</p>
+
+    <p>z = 2² + 3²</p>
+
+    <p>Step 2: Calculate the squares.</p>
+
+    <p>z = 4 + 9 = 13</p>
+
+    <p><strong>Answer: z = 13</strong></p>
+</section>
+
+
+<section>
+    <h2>2. Limit and Continuity</h2>
+
+    <h3>Limit</h3>
+
+    <p>
+        A limit describes the value a function approaches
+        when its variables approach particular values.
+    </p>
+
+    <p>
+        For a function f(x,y), we may write:
+        lim (x,y)→(a,b) f(x,y).
+    </p>
+
+    <h3>Solved Example</h3>
+
+    <p>Evaluate the limit of f(x,y) = x² + y² as (x,y) approaches (1,2).</p>
+
+    <p>Step 1: Substitute x = 1 and y = 2.</p>
+
+    <p>1² + 2² = 1 + 4 = 5</p>
+
+    <p><strong>Answer: 5</strong></p>
+
+    <h3>Continuity</h3>
+
+    <p>
+        A function is continuous at a point if its limit
+        exists there and equals the function's value at
+        that point.
+    </p>
+
+    <p>
+        For two-variable functions, we must check the
+        limit carefully. Direct substitution alone is
+        not sufficient for every function.
+    </p>
+</section>
+
+
+<section>
+    <h2>3. Differentiability</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        Differentiability describes whether a function
+        has a well-defined local rate of change.
+    </p>
+
+    <p>
+        For functions of several variables, differentiability
+        is stronger than merely having partial derivatives.
+    </p>
+
+    <p>
+        If the first partial derivatives exist and are
+        continuous near a point, that is a sufficient
+        condition for differentiability at that point.
+    </p>
+
+    <h3>Important Note</h3>
+
+    <p>
+        The existence of partial derivatives at a single
+        point does not by itself guarantee differentiability.
+    </p>
+</section>
+
+
+<section>
+    <h2>4. Partial Derivatives</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A partial derivative measures how a function changes
+        with respect to one variable while keeping the
+        other variables constant.
+    </p>
+
+    <h3>Notation</h3>
+
+    <p>For z = f(x,y):</p>
+
+    <ul>
+        <li>∂z/∂x means differentiate with respect to x.</li>
+        <li>∂z/∂y means differentiate with respect to y.</li>
+    </ul>
+
+    <h3>Solved Example</h3>
+
+    <p>Find both partial derivatives of:</p>
+
+    <p>z = x²y + 3xy²</p>
+
+    <h4>Step 1: Differentiate with respect to x</h4>
+
+    <p>
+        Treat y as a constant.
+    </p>
+
+    <p>
+        ∂z/∂x = 2xy + 3y²
+    </p>
+
+    <h4>Step 2: Differentiate with respect to y</h4>
+
+    <p>
+        Treat x as a constant.
+    </p>
+
+    <p>
+        ∂z/∂y = x² + 6xy
+    </p>
+
+    <p><strong>Answers:</strong></p>
+
+    <p>∂z/∂x = 2xy + 3y²</p>
+    <p>∂z/∂y = x² + 6xy</p>
+</section>
+
+
+<section>
+    <h2>5. Total Derivatives and Applications</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A total derivative measures the overall change in a
+        function when its independent variables also change.
+    </p>
+
+    <p>
+        If z = f(x,y), where x and y depend on t, then:
+    </p>
+
+    <p>
+        dz/dt = (∂z/∂x)(dx/dt) + (∂z/∂y)(dy/dt)
+    </p>
+
+    <h3>Solved Example</h3>
+
+    <p>Given z = x² + y², x = t and y = 2t.</p>
+
+    <p>Step 1: Find the partial derivatives.</p>
+
+    <p>∂z/∂x = 2x</p>
+    <p>∂z/∂y = 2y</p>
+
+    <p>Step 2: Find the derivatives of x and y.</p>
+
+    <p>dx/dt = 1 and dy/dt = 2</p>
+
+    <p>Step 3: Apply the total derivative formula.</p>
+
+    <p>dz/dt = (2x)(1) + (2y)(2)</p>
+
+    <p>Substitute x = t and y = 2t:</p>
+
+    <p>dz/dt = 2t + 8t = 10t</p>
+
+    <p><strong>Answer: dz/dt = 10t</strong></p>
+</section>
+
+
+<section>
+    <h2>6. Chain Rule</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        The chain rule is used when one variable depends on
+        other variables that themselves depend on another
+        variable.
+    </p>
+
+    <p>
+        If z = f(x,y), and x and y depend on t:
+    </p>
+
+    <p>
+        dz/dt = (∂z/∂x)(dx/dt) + (∂z/∂y)(dy/dt)
+    </p>
+
+    <h3>Solved Example</h3>
+
+    <p>Given z = xy, x = t² and y = 3t.</p>
+
+    <p>Step 1: Find the partial derivatives.</p>
+
+    <p>∂z/∂x = y and ∂z/∂y = x</p>
+
+    <p>Step 2: Find dx/dt and dy/dt.</p>
+
+    <p>dx/dt = 2t and dy/dt = 3</p>
+
+    <p>Step 3: Apply the chain rule.</p>
+
+    <p>dz/dt = y(2t) + x(3)</p>
+
+    <p>Substitute x = t² and y = 3t.</p>
+
+    <p>dz/dt = (3t)(2t) + (t²)(3)</p>
+
+    <p>dz/dt = 6t² + 3t² = 9t²</p>
+
+    <p><strong>Answer: dz/dt = 9t²</strong></p>
+</section>
+
+
+<section>
+    <h2>7. Implicit Functions</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        An implicit function is represented by an equation
+        in which the dependent variable is not necessarily
+        written alone.
+    </p>
+
+    <p>Example: x² + y² = 25</p>
+
+    <h3>Solved Example</h3>
+
+    <p>Find dy/dx for x² + y² = 25.</p>
+
+    <p>Step 1: Differentiate both sides with respect to x.</p>
+
+    <p>2x + 2y(dy/dx) = 0</p>
+
+    <p>Step 2: Move 2x to the right side.</p>
+
+    <p>2y(dy/dx) = -2x</p>
+
+    <p>Step 3: Divide by 2y.</p>
+
+    <p><strong>Answer: dy/dx = -x/y, where y ≠ 0.</strong></p>
+</section>
+
+
+<section>
+    <h2>8. Euler's Theorem for Homogeneous Functions</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A homogeneous function has terms of the same total
+        degree.
+    </p>
+
+    <p>
+        For example, x² + xy + y² is homogeneous of degree 2.
+    </p>
+
+    <h3>Euler's Theorem</h3>
+
+    <p>
+        If z = f(x,y) is differentiable and homogeneous
+        of degree n, then:
+    </p>
+
+    <p>
+        x(∂z/∂x) + y(∂z/∂y) = nz
+    </p>
+
+    <h3>Solved Example</h3>
+
+    <p>Verify Euler's theorem for z = x² + xy + y².</p>
+
+    <p>Step 1: The function has degree 2, so n = 2.</p>
+
+    <p>Step 2: Find the partial derivatives.</p>
+
+    <p>∂z/∂x = 2x + y</p>
+    <p>∂z/∂y = x + 2y</p>
+
+    <p>Step 3: Substitute into the left-hand side.</p>
+
+    <p>
+        x(2x + y) + y(x + 2y)
+    </p>
+
+    <p>
+        = 2x² + xy + xy + 2y²
+    </p>
+
+    <p>
+        = 2x² + 2xy + 2y²
+    </p>
+
+    <p>Step 4: Compare with 2z.</p>
+
+    <p>2z = 2(x² + xy + y²)</p>
+
+    <p>
+        Both sides are equal. Therefore, Euler's theorem
+        is verified.
+    </p>
+</section>
+
+
+<section>
+    <h2>9. Jacobian</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A Jacobian is a determinant made from partial
+        derivatives. It is useful in changing variables
+        and studying how transformations affect space.
+    </p>
+
+    <p>
+        If u = u(x,y) and v = v(x,y), then:
+    </p>
+
+    <p>
+        ∂(u,v)/∂(x,y) =
+        (∂u/∂x)(∂v/∂y) -
+        (∂u/∂y)(∂v/∂x)
+    </p>
+
+    <h3>Solved Example</h3>
+
+    <p>Given u = x + y and v = x - y, find the Jacobian.</p>
+
+    <p>Step 1: Find the partial derivatives.</p>
+
+    <p>∂u/∂x = 1, ∂u/∂y = 1</p>
+    <p>∂v/∂x = 1, ∂v/∂y = -1</p>
+
+    <p>Step 2: Apply the formula.</p>
+
+    <p>J = (1)(-1) - (1)(1)</p>
+
+    <p>J = -1 - 1 = -2</p>
+
+    <p><strong>Answer: J = -2</strong></p>
+</section>
+
+
+<section>
+    <h2>10. Maxima and Minima of Two-Variable Functions</h2>
+
+    <h3>Simple Explanation</h3>
+
+    <p>
+        A maximum is a point where a function has a local
+        high value. A minimum is a point where it has a
+        local low value.
+    </p>
+
+    <h3>Steps to Find Stationary Points</h3>
+
+    <ol>
+        <li>Find ∂f/∂x and ∂f/∂y.</li>
+        <li>Set both partial derivatives equal to zero.</li>
+        <li>Solve the equations to find stationary points.</li>
+        <li>Use the second derivative test to classify them.</li>
+    </ol>
+
+    <h3>Second Derivative Test</h3>
+
+    <p>
+        Calculate D = fxx fyy - (fxy)².
+    </p>
+
+    <ul>
+        <li>If D &gt; 0 and fxx &gt; 0: local minimum.</li>
+        <li>If D &gt; 0 and fxx &lt; 0: local maximum.</li>
+        <li>If D &lt; 0: saddle point.</li>
+        <li>If D = 0: the test is inconclusive.</li>
+    </ul>
+
+    <h3>Solved Example</h3>
+
+    <p>Find the minimum of f(x,y) = x² + y² - 4x - 6y.</p>
+
+    <p>Step 1: Find the first partial derivatives.</p>
+
+    <p>fx = 2x - 4 = 0, so x = 2.</p>
+
+    <p>fy = 2y - 6 = 0, so y = 3.</p>
+
+    <p>Step 2: Find the second partial derivatives.</p>
+
+    <p>fxx = 2, fyy = 2, fxy = 0.</p>
+
+    <p>Step 3: Calculate D.</p>
+
+    <p>D = (2)(2) - 0² = 4.</p>
+
+    <p>
+        Since D &gt; 0 and fxx &gt; 0, the point (2,3)
+        is a local minimum.
+    </p>
+
+    <p>Step 4: Calculate the minimum value.</p>
+
+    <p>f(2,3) = 4 + 9 - 8 - 18 = -13</p>
+
+    <p><strong>Answer: Minimum value = -13 at (2,3).</strong></p>
+</section>
+
+
+<section>
+    <h2>Practice Questions</h2>
+
+    <ol>
+        <li>Find the partial derivatives of z = x³y + xy².</li>
+        <li>Find dy/dx if x² + 3y² = 12.</li>
+        <li>Verify Euler's theorem for z = x² + y².</li>
+        <li>Find the Jacobian when u = 2x + y and v = x - 3y.</li>
+        <li>Find the stationary point of f(x,y) = x² + y² - 6x + 8y.</li>
+    </ol>
+</section>
+
+</main>
+
+<footer>
+    <p>Study Hub | Learn step by step</p>
+    <a href="mathematics.html">Back to Mathematics</a>
+</footer>
+
+</body>
+</html>
