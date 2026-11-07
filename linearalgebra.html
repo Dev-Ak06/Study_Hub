@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Linear Algebra | Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .math-content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .math-content h2 {
+            margin-top: 35px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        .math-content h3 {
+            margin-top: 24px;
+        }
+
+        .formula {
+            background: #102a43;
+            color: #7dd3fc;
+            border-left: 5px solid #38bdf8;
+            padding: 14px;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 1.05rem;
+        }
+
+        .example {
+            background: rgba(100, 116, 139, 0.12);
+            border: 1px solid #64748b;
+            padding: 16px;
+            margin: 18px 0;
+            border-radius: 10px;
+        }
+
+        .important {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+
+        .math-content li {
+            margin-bottom: 8px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="math-content">
+
+    <a class="back-link" href="mathematics.html">
+        ← Back to Mathematics Modules
+    </a>
+
+    <h1>Module 1: Linear Algebra</h1>
+
+    <p>
+        Linear Algebra is an important branch of mathematics that deals
+        with matrices, systems of linear equations, vector-like quantities,
+        eigenvalues and eigenvectors. It is widely used in computer science,
+        machine learning, computer graphics and engineering.
+    </p>
+
+    <h2>1. Echelon Form and Canonical Form</h2>
+
+    <h3>1.1 Elementary Row Operations</h3>
+
+    <p>
+        Elementary row operations are operations performed on the rows
+        of a matrix to simplify it. They are useful for finding the rank
+        of a matrix and solving systems of linear equations.
+    </p>
+
+    <ul>
+        <li><b>Row interchange:</b> Interchange two rows, such as R₁ ↔ R₂.</li>
+        <li><b>Row scaling:</b> Multiply a row by a non-zero constant, R₁ → kR₁.</li>
+        <li><b>Row replacement:</b> Add a multiple of one row to another,
+            such as R₂ → R₂ − 2R₁.</li>
+    </ul>
+
+    <h3>1.2 Row Echelon Form (REF)</h3>
+
+    <p>A matrix is in row echelon form when:</p>
+
+    <ul>
+        <li>All zero rows, if present, are at the bottom.</li>
+        <li>The first non-zero entry of each non-zero row is to the
+            right of the first non-zero entry in the row above it.</li>
+        <li>All entries below each leading entry are zero.</li>
+    </ul>
+
+    <div class="formula">
+        Example of REF:<br><br>
+        [ 1&nbsp; 2&nbsp; 3 ]<br>
+        [ 0&nbsp; 1&nbsp; 4 ]<br>
+        [ 0&nbsp; 0&nbsp; 2 ]
+    </div>
+
+    <h3>1.3 Reduced Row Echelon Form</h3>
+
+    <p>
+        In reduced row echelon form (RREF), each leading entry is 1
+        and is the only non-zero entry in its column.
+    </p>
+
+    <div class="formula">
+        Example of RREF:<br><br>
+        [ 1&nbsp; 0&nbsp; 3 ]<br>
+        [ 0&nbsp; 1&nbsp; 4 ]<br>
+        [ 0&nbsp; 0&nbsp; 0 ]
+    </div>
+
+    <h3>1.4 Canonical or Normal Form</h3>
+
+    <p>
+        In the context of matrix rank, canonical form commonly refers
+        to reducing a matrix using elementary row and column operations
+        to a block form containing an identity matrix followed by zeros.
+    </p>
+
+    <div class="formula">
+        Canonical form of a rank-r matrix:<br><br>
+        [ Iᵣ&nbsp; 0 ]<br>
+        [ 0&nbsp;&nbsp; 0 ]
+    </div>
+
+    <p>
+        Here, Iᵣ is an identity matrix of order r. The exact meaning
+        of canonical form can vary by textbook, so follow the convention
+        used in your class notes.
+    </p>
+
+    <div class="example">
+        <h3>Solved Example 1: Convert a matrix into echelon form</h3>
+
+        Given:
+        <div class="formula">
+            A = [ 1&nbsp; 2&nbsp; 3 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 2&nbsp; 4&nbsp; 7 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 1&nbsp; 1&nbsp; 2 ]
+        </div>
+
+        <p><b>Step 1:</b> Apply R₂ → R₂ − 2R₁.</p>
+
+        <div class="formula">
+            [ 1&nbsp; 2&nbsp; 3 ]<br>
+            [ 0&nbsp; 0&nbsp; 1 ]<br>
+            [ 1&nbsp; 1&nbsp; 2 ]
+        </div>
+
+        <p><b>Step 2:</b> Apply R₃ → R₃ − R₁.</p>
+
+        <div class="formula">
+            [ 1&nbsp; 2&nbsp; 3 ]<br>
+            [ 0&nbsp; 0&nbsp; 1 ]<br>
+            [ 0&nbsp; -1&nbsp; -1 ]
+        </div>
+
+        <p><b>Step 3:</b> Interchange R₂ and R₃.</p>
+
+        <div class="formula">
+            [ 1&nbsp; 2&nbsp; 3 ]<br>
+            [ 0&nbsp; -1&nbsp; -1 ]<br>
+            [ 0&nbsp; 0&nbsp; 1 ]
+        </div>
+
+        <p>
+            This is an echelon form because the leading non-zero entries
+            move to the right as we move down the rows.
+        </p>
+    </div>
+
+    <h2>2. Inverse of a Matrix</h2>
+
+    <p>
+        The inverse of a square matrix A is a matrix A⁻¹ such that
+        multiplying A by A⁻¹ gives the identity matrix.
+    </p>
+
+    <div class="formula">
+        <span class="important">A A⁻¹ = A⁻¹ A = I</span>
+    </div>
+
+    <p>
+        A matrix has an inverse if and only if it is non-singular,
+        meaning its determinant is non-zero.
+    </p>
+
+    <div class="formula">
+        <span class="important">A⁻¹ = adj(A) / det(A), when det(A) ≠ 0</span>
+    </div>
+
+    <h3>Inverse of a 2 × 2 Matrix</h3>
+
+    <p>For the matrix below:</p>
+
+    <div class="formula">
+        A = [ a&nbsp; b ]<br>
+        &nbsp;&nbsp;&nbsp;[ c&nbsp; d ]
+    </div>
+
+    <div class="formula">
+        <span class="important">
+            A⁻¹ = 1/(ad − bc) [ d&nbsp; -b ]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ -c&nbsp; a ]
+        </span>
+    </div>
+
+    <div class="example">
+        <h3>Solved Example 2</h3>
+
+        Find the inverse of:
+
+        <div class="formula">
+            A = [ 2&nbsp; 1 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 1&nbsp; 1 ]
+        </div>
+
+        <p><b>Step 1: Calculate determinant.</b></p>
+
+        <div class="formula">
+            det(A) = (2 × 1) − (1 × 1) = 1
+        </div>
+
+        <p><b>Step 2: Apply the inverse formula.</b></p>
+
+        <div class="formula">
+            A⁻¹ = [ 1&nbsp; -1 ]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ -1&nbsp; 2 ]
+        </div>
+
+        <p>
+            Since det(A) = 1 ≠ 0, the inverse exists.
+        </p>
+    </div>
+
+    <h2>3. Rank of a Matrix</h2>
+
+    <p>
+        The rank of a matrix is the maximum number of linearly independent
+        rows or columns. It is also equal to the number of non-zero rows
+        in its row echelon form.
+    </p>
+
+    <div class="formula">
+        <span class="important">
+            rank(A) = Number of non-zero rows in REF
+        </span>
+    </div>
+
+    <p>
+        The rank cannot exceed the number of rows or columns.
+    </p>
+
+    <div class="formula">
+        <span class="important">rank(A) ≤ min(m, n)</span>
+    </div>
+
+    <div class="example">
+        <h3>Solved Example 3</h3>
+
+        Find the rank of:
+
+        <div class="formula">
+            A = [ 1&nbsp; 2&nbsp; 3 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 2&nbsp; 4&nbsp; 6 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 1&nbsp; 1&nbsp; 1 ]
+        </div>
+
+        Apply R₂ → R₂ − 2R₁ and R₃ → R₃ − R₁.
+
+        <div class="formula">
+            [ 1&nbsp; 2&nbsp; 3 ]<br>
+            [ 0&nbsp; 0&nbsp; 0 ]<br>
+            [ 0&nbsp; -1&nbsp; -2 ]
+        </div>
+
+        After arranging the non-zero rows:
+
+        <div class="formula">
+            [ 1&nbsp; 2&nbsp; 3 ]<br>
+            [ 0&nbsp; -1&nbsp; -2 ]<br>
+            [ 0&nbsp; 0&nbsp; 0 ]
+        </div>
+
+        <p>
+            There are two non-zero rows.
+        </p>
+
+        <div class="formula">
+            <span class="important">rank(A) = 2</span>
+        </div>
+    </div>
+
+    <h2>4. Systems of Linear Equations</h2>
+
+    <p>
+        A system of linear equations consists of two or more linear
+        equations involving unknown variables. In matrix form:
+    </p>
+
+    <div class="formula">
+        <span class="important">AX = B</span>
+    </div>
+
+    <p>Here:</p>
+
+    <ul>
+        <li>A = coefficient matrix</li>
+        <li>X = column matrix of unknowns</li>
+        <li>B = column matrix of constants</li>
+    </ul>
+
+    <h3>4.1 Consistency Conditions</h3>
+
+    <p>
+        Let A be the coefficient matrix and [A|B] the augmented matrix.
+    </p>
+
+    <div class="formula">
+        <span class="important">
+            rank(A) = rank([A|B])
+        </span>
+        <br>
+        The system is consistent.
+    </div>
+
+    <div class="formula">
+        <span class="important">
+            rank(A) ≠ rank([A|B])
+        </span>
+        <br>
+        The system is inconsistent and has no solution.
+    </div>
+
+    <p>For a consistent system with n unknowns:</p>
+
+    <ul>
+        <li>If rank(A) = n, the solution is unique.</li>
+        <li>If rank(A) &lt; n, infinitely many solutions exist.</li>
+    </ul>
+
+    <div class="example">
+        <h3>Solved Example 4: Unique solution</h3>
+
+        Solve:
+
+        <div class="formula">
+            x + y = 5<br>
+            x − y = 1
+        </div>
+
+        Adding both equations:
+
+        <div class="formula">
+            2x = 6 ⇒ <span class="important">x = 3</span>
+        </div>
+
+        Substitute x = 3 into x + y = 5:
+
+        <div class="formula">
+            3 + y = 5 ⇒ <span class="important">y = 2</span>
+        </div>
+
+        <p>Answer: x = 3, y = 2.</p>
+    </div>
+
+    <div class="example">
+        <h3>Solved Example 5: Inconsistent system</h3>
+
+        Consider:
+
+        <div class="formula">
+            x + y = 2<br>
+            x + y = 5
+        </div>
+
+        Subtracting the first equation from the second gives:
+
+        <div class="formula">
+            0 = 3
+        </div>
+
+        <p>
+            This is impossible. Therefore, the system has no solution
+            and is inconsistent.
+        </p>
+    </div>
+
+    <h2>5. Eigenvalues and Eigenvectors</h2>
+
+    <p>
+        An eigenvector of a square matrix A is a non-zero vector X whose
+        direction remains unchanged when A acts on it. The corresponding
+        eigenvalue λ describes the scaling factor.
+    </p>
+
+    <div class="formula">
+        <span class="important">AX = λX</span>
+    </div>
+
+    <p>Rearranging:</p>
+
+    <div class="formula">
+        <span class="important">(A − λI)X = 0</span>
+    </div>
+
+    <p>
+        For a non-zero solution X to exist, the determinant must be zero.
+    </p>
+
+    <div class="formula">
+        <span class="important">det(A − λI) = 0</span>
+        <br>
+        This is the characteristic equation.
+    </div>
+
+    <div class="example">
+        <h3>Solved Example 6</h3>
+
+        Find the eigenvalues of:
+
+        <div class="formula">
+            A = [ 2&nbsp; 0 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 0&nbsp; 3 ]
+        </div>
+
+        <p><b>Step 1:</b> Form the characteristic equation.</p>
+
+        <div class="formula">
+            det(A − λI) = 0
+        </div>
+
+        <div class="formula">
+            (2 − λ)(3 − λ) = 0
+        </div>
+
+        <p><b>Step 2:</b> Solve.</p>
+
+        <div class="formula">
+            <span class="important">λ₁ = 2, λ₂ = 3</span>
+        </div>
+
+        <p><b>Step 3:</b> Find eigenvectors.</p>
+
+        For λ = 2, solving (A − 2I)X = 0 gives an eigenvector:
+
+        <div class="formula">
+            X₁ = [ 1 ]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;[ 0 ]
+        </div>
+
+        For λ = 3:
+
+        <div class="formula">
+            X₂ = [ 0 ]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;[ 1 ]
+        </div>
+    </div>
+
+    <h2>6. Diagonalization of a Matrix</h2>
+
+    <p>
+        Diagonalization means expressing a square matrix in the form
+        A = PDP⁻¹, where D is a diagonal matrix and P is formed from
+        linearly independent eigenvectors of A.
+    </p>
+
+    <div class="formula">
+        <span class="important">A = PDP⁻¹</span>
+    </div>
+
+    <p>
+        The diagonal entries of D are the eigenvalues. The columns of P
+        are the corresponding eigenvectors, arranged in the same order.
+    </p>
+
+    <p>
+        A matrix of order n is diagonalizable if it has n linearly
+        independent eigenvectors. Having n distinct eigenvalues is a
+        sufficient condition for diagonalizability, but it is not necessary.
+    </p>
+
+    <div class="example">
+        <h3>Solved Example 7</h3>
+
+        For the matrix:
+
+        <div class="formula">
+            A = [ 2&nbsp; 0 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 0&nbsp; 3 ]
+        </div>
+
+        The eigenvectors form the columns of:
+
+        <div class="formula">
+            P = [ 1&nbsp; 0 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 0&nbsp; 1 ]
+        </div>
+
+        The diagonal matrix is:
+
+        <div class="formula">
+            D = [ 2&nbsp; 0 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 0&nbsp; 3 ]
+        </div>
+
+        Since P = I, we have:
+
+        <div class="formula">
+            <span class="important">A = PDP⁻¹ = D</span>
+        </div>
+
+        <p>
+            This matrix is already diagonal, so diagonalization is immediate.
+        </p>
+    </div>
+
+    <h2>7. Cayley–Hamilton Theorem</h2>
+
+    <p>
+        The Cayley–Hamilton theorem states that every square matrix
+        satisfies its own characteristic equation.
+    </p>
+
+    <p>
+        If the characteristic polynomial of A is:
+    </p>
+
+    <div class="formula">
+        p(λ) = det(λI − A)
+    </div>
+
+    <p>
+        and
+    </p>
+
+    <div class="formula">
+        p(λ) = λⁿ + c₁λⁿ⁻¹ + ... + cₙ
+    </div>
+
+    <p>then the theorem gives:</p>
+
+    <div class="formula">
+        <span class="important">
+            p(A) = Aⁿ + c₁Aⁿ⁻¹ + ... + cₙI = 0
+        </span>
+    </div>
+
+    <p>
+        We replace every power of λ in the characteristic polynomial
+        with the corresponding power of A.
+    </p>
+
+    <div class="example">
+        <h3>Solved Example 8</h3>
+
+        Let:
+
+        <div class="formula">
+            A = [ 2&nbsp; 0 ]<br>
+            &nbsp;&nbsp;&nbsp;[ 0&nbsp; 3 ]
+        </div>
+
+        <p><b>Step 1: Find the characteristic polynomial.</b></p>
+
+        <div class="formula">
+            det(λI − A) = (λ − 2)(λ − 3)
+        </div>
+
+        <div class="formula">
+            p(λ) = λ² − 5λ + 6
+        </div>
+
+        <p><b>Step 2: Apply Cayley–Hamilton.</b></p>
+
+        <div class="formula">
+            <span class="important">A² − 5A + 6I = 0</span>
+        </div>
+
+        <p>
+            This verifies the theorem because A is diagonal with entries
+            2 and 3, and each satisfies λ² − 5λ + 6 = 0.
+        </p>
+    </div>
+
+    <h2>8. Important Formula Revision</h2>
+
+    <div class="formula">
+        <b>Inverse:</b><br>
+        A⁻¹ = adj(A) / det(A), provided det(A) ≠ 0
+    </div>
+
+    <div class="formula">
+        <b>Rank:</b><br>
+        rank(A) = Number of non-zero rows in REF
+    </div>
+
+    <div class="formula">
+        <b>Consistency:</b><br>
+        rank(A) = rank([A|B])
+    </div>
+
+    <div class="formula">
+        <b>Eigenvalues:</b><br>
+        det(A − λI) = 0
+    </div>
+
+    <div class="formula">
+        <b>Eigenvectors:</b><br>
+        (A − λI)X = 0, where X ≠ 0
+    </div>
+
+    <div class="formula">
+        <b>Diagonalization:</b><br>
+        A = PDP⁻¹
+    </div>
+
+    <div class="formula">
+        <b>Cayley–Hamilton:</b><br>
+        p(A) = 0
+    </div>
+
+    <h2>9. Common Exam Mistakes</h2>
+
+    <ul>
+        <li>
+            Always use elementary operations correctly while reducing a matrix.
+        </li>
+        <li>
+            Do not confuse row echelon form with reduced row echelon form.
+        </li>
+        <li>
+            Check det(A) ≠ 0 before using the inverse formula.
+        </li>
+        <li>
+            For consistency, compare the ranks of A and its augmented matrix.
+        </li>
+        <li>
+            Eigenvectors must be non-zero vectors.
+        </li>
+        <li>
+            In diagonalization, keep eigenvectors and eigenvalues in matching
+            column and diagonal positions.
+        </li>
+        <li>
+            In the Cayley–Hamilton theorem, substitute A for λ throughout
+            the characteristic polynomial.
+        </li>
+    </ul>
+
+    <h2>10. Practice Questions</h2>
+
+    <ol>
+        <li>Reduce a given 3 × 3 matrix to row echelon form and find its rank.</li>
+        <li>Find the inverse of a non-singular 3 × 3 matrix.</li>
+        <li>Determine whether a system of three linear equations is consistent.</li>
+        <li>Find the eigenvalues and eigenvectors of a 2 × 2 matrix.</li>
+        <li>Diagonalize a matrix that has enough linearly independent eigenvectors.</li>
+        <li>Verify the Cayley–Hamilton theorem for a 2 × 2 matrix.</li>
+        <li>Use the Cayley–Hamilton theorem to find A⁻¹ for a non-singular matrix.</li>
+    </ol>
+
+    <p>
+        <a class="back-link" href="mathematics.html">
+            ← Back to Mathematics Modules
+        </a>
+    </p>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Mechanics | Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Study Hub</h1>
+    <p>Engineering Physics - Module 3</p>
+</header>
+
+<main>
+    <p><a href="physics.html">Back to Physics</p>
+
+    <h1>3.02 Quantum Mechanics</h1>
+
+    <p>
+        Quantum mechanics is the branch of physics that studies the behaviour
+        of microscopic particles such as electrons, atoms and photons.
+        It explains phenomena that cannot be fully explained by classical physics.
+    </p>
+
+    <p>
+        This chapter covers wave functions, probability interpretation,
+        normalization, the uncertainty principle and the Schrödinger wave equation.
+    </p>
+
+    <hr>
+
+    <!-- TOPIC 1 -->
+
+    <h2>1. Concept of Wave Function</h2>
+
+    <p>
+        A wave function is a mathematical function used to describe the
+        quantum state of a particle.
+    </p>
+
+    <p>
+        It is generally represented by the Greek letter psi (ψ).
+        For a particle moving in one dimension, the wave function may be written as:
+    </p>
+
+    <p><strong>ψ(x,t)</strong></p>
+
+    <p>Where:</p>
+
+    <ul>
+        <li>ψ = wave function</li>
+        <li>x = position of the particle</li>
+        <li>t = time</li>
+    </ul>
+
+    <p>
+        The wave function contains information about the possible results
+        of measurements performed on a quantum particle.
+    </p>
+
+    <h3>Important Properties of a Wave Function</h3>
+
+    <ul>
+        <li>It should be single-valued.</li>
+        <li>It should be finite and continuous for physically acceptable states.</li>
+        <li>It must be normalizable for a normalizable bound state.</li>
+        <li>Its absolute square |ψ|² gives the probability density.</li>
+    </ul>
+
+    <p>
+        A wave function itself is generally not directly measurable.
+        Physical predictions are obtained from quantities calculated using it.
+    </p>
+
+    <hr>
+
+    <!-- TOPIC 2 -->
+
+    <h2>2. Physical Significance of Wave Function</h2>
+
+    <p>
+        The wave function ψ does not directly represent the probability.
+        The physically meaningful quantity is its absolute square, |ψ|².
+    </p>
+
+    <p><strong>Probability density = |ψ|²</strong></p>
+
+    <p>
+        For a real-valued wave function:
+    </p>
+
+    <p><strong>|ψ|² = ψ²</strong></p>
+
+    <p>
+        For a complex-valued wave function:
+    </p>
+
+    <p><strong>|ψ|² = ψ*ψ</strong></p>
+
+    <p>
+        Here ψ* is the complex conjugate of ψ.
+    </p>
+
+    <h3>Meaning</h3>
+
+    <p>
+        A larger value of |ψ|² at a particular position means a greater
+        probability density of finding the particle near that position.
+    </p>
+
+    <p>
+        A smaller value means a lower probability density.
+        If |ψ|² = 0 at a position, the probability density at that position is zero.
+    </p>
+
+    <h3>Probability in a Small Interval</h3>
+
+    <p>
+        The probability of finding a particle between x and x + dx is:
+    </p>
+
+    <p><strong>dP = |ψ(x)|² dx</strong></p>
+
+    <p>
+        The probability of finding a particle between positions a and b is:
+    </p>
+
+    <p><strong>P = ∫ₐᵇ |ψ(x)|² dx</strong></p>
+
+    <p>
+        The probability is always between 0 and 1.
+    </p>
+
+    <hr>
+
+    <!-- TOPIC 3 -->
+
+    <h2>3. Probability Interpretation of Wave Function</h2>
+
+    <p>
+        According to Max Born's probability interpretation, the absolute
+        square of the wave function gives the probability density of
+        finding a particle.
+    </p>
+
+    <p><strong>Probability density = |ψ|²</strong></p>
+
+    <p>
+        For a particle in three-dimensional space:
+    </p>
+
+    <p><strong>Probability = ∫ |ψ|² dV</strong></p>
+
+    <p>
+        For a particular region, the integration is performed over that region.
+    </p>
+
+    <h3>Example</h3>
+
+    <p>
+        Suppose the probability density is constant and equal to
+        0.5 m⁻¹ in a one-dimensional interval of length 1 metre.
+    </p>
+
+    <p>
+        Probability = probability density × interval length
+    </p>
+
+    <p>
+        P = 0.5 × 1 = 0.5
+    </p>
+
+    <p>
+        Therefore, the probability of finding the particle in that interval
+        is 0.5 or 50%, provided the stated density is part of a valid
+        normalized distribution.
+    </p>
+
+    <h3>Important Points</h3>
+
+    <ul>
+        <li>Probability cannot be negative.</li>
+        <li>The total probability of finding a particle somewhere must be 1.</li>
+        <li>|ψ|² is always real and non-negative.</li>
+        <li>The wave function may be complex.</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 4 -->
+
+    <h2>4. Normalization of Wave Function</h2>
+
+    <p>
+        Normalization means ensuring that the total probability of finding
+        a particle over all space is equal to 1.
+    </p>
+
+    <p><strong>∫₋∞⁺∞ |ψ(x)|² dx = 1</strong></p>
+
+    <p>
+        For a three-dimensional wave function:
+    </p>
+
+    <p><strong>∫ |ψ|² dV = 1</strong></p>
+
+    <p>
+        These equations are called normalization conditions.
+    </p>
+
+    <h3>Why Is Normalization Necessary?</h3>
+
+    <p>
+        A particle must be found somewhere in the complete space when its
+        position is measured. Therefore, the total probability must be 1.
+    </p>
+
+    <p>
+        If a wave function is not normalized, it can often be multiplied
+        by a suitable constant to obtain a normalized wave function.
+    </p>
+
+    <h3>Normalization Constant</h3>
+
+    <p>
+        Suppose:
+    </p>
+
+    <p><strong>ψ(x) = A f(x)</strong></p>
+
+    <p>
+        Here A is a constant. Applying the normalization condition:
+    </p>
+
+    <p><strong>∫ |A f(x)|² dx = 1</strong></p>
+
+    <p>
+        For a constant A:
+    </p>
+
+    <p><strong>|A|² ∫ |f(x)|² dx = 1</strong></p>
+
+    <p>
+        Therefore:
+    </p>
+
+    <p><strong>|A|² = 1 / ∫ |f(x)|² dx</strong></p>
+
+    <p>
+        For a real positive normalization constant:
+    </p>
+
+    <p><strong>A = 1 / √(∫ |f(x)|² dx)</strong></p>
+
+    <p>
+        This is the general method for finding a normalization constant.
+    </p>
+
+    <hr>
+
+    <!-- TOPIC 5 -->
+
+    <h2>5. Heisenberg Uncertainty Principle</h2>
+
+    <p>
+        The Heisenberg uncertainty principle states that the position and
+        momentum of a quantum particle cannot both be known with unlimited
+        precision at the same time.
+    </p>
+
+    <p>
+        The more precisely the position is specified, the greater the
+        minimum uncertainty in momentum, and vice versa.
+    </p>
+
+    <h3>Mathematical Expression</h3>
+
+    <p><strong>Δx Δp ≥ ℏ/2</strong></p>
+
+    <p>
+        Since ℏ = h/(2π), the equation can also be written as:
+    </p>
+
+    <p><strong>Δx Δp ≥ h/(4π)</strong></p>
+
+    <p>Where:</p>
+
+    <ul>
+        <li>Δx = uncertainty in position</li>
+        <li>Δp = uncertainty in momentum</li>
+        <li>h = Planck's constant = 6.626 × 10⁻³⁴ J s</li>
+        <li>ℏ = reduced Planck's constant = h/(2π)</li>
+    </ul>
+
+    <h3>For Position and Velocity</h3>
+
+    <p>
+        For a non-relativistic particle of mass m:
+    </p>
+
+    <p><strong>Δp = m Δv</strong></p>
+
+    <p>Therefore:</p>
+
+    <p><strong>Δx Δv ≥ h/(4πm)</strong></p>
+
+    <h3>For Energy and Time</h3>
+
+    <p><strong>ΔE Δt ≥ ℏ/2 = h/(4π)</strong></p>
+
+    <p>
+        This is the commonly used energy-time uncertainty relation.
+    </p>
+
+    <h3>Physical Significance</h3>
+
+    <ul>
+        <li>It is a fundamental property of quantum systems.</li>
+        <li>It is not simply caused by poor measuring instruments.</li>
+        <li>It is important for microscopic particles such as electrons.</li>
+        <li>It does not mean that all physical quantities are uncertain by the same amount.</li>
+    </ul>
+
+    <hr>
+
+    <!-- TOPIC 6 -->
+
+    <h2>6. Introduction to Schrödinger Wave Equation</h2>
+
+    <p>
+        The Schrödinger wave equation is a fundamental equation of quantum
+        mechanics. It describes how the quantum state of a system evolves.
+    </p>
+
+    <p>
+        For a non-relativistic particle of mass m moving in a potential
+        energy V, the time-dependent Schrödinger equation is:
+    </p>
+
+    <p><strong>iℏ (∂ψ/∂t) = -(ℏ²/2m) ∇²ψ + Vψ</strong></p>
+
+    <p>Where:</p>
+
+    <ul>
+        <li>i = imaginary unit</li>
+        <li>ℏ = reduced Planck's constant</li>
+        <li>ψ = wave function</li>
+        <li>m = mass of the particle</li>
+        <li>V = potential energy</li>
+        <li>∇² = Laplacian operator</li>
+    </ul>
+
+    <h3>Time-Independent Schrödinger Equation</h3>
+
+    <p>
+        For a time-independent potential and an energy eigenstate, the
+        time-independent Schrödinger equation is:
+    </p>
+
+    <p><strong>-(ℏ²/2m) ∇²ψ + Vψ = Eψ</strong></p>
+
+    <p>
+        In one dimension, it becomes:
+    </p>
+
+    <p><strong>-(ℏ²/2m)(d²ψ/dx²) + Vψ = Eψ</strong></p>
+
+    <p>
+        Here E represents the total energy of the energy eigenstate.
+    </p>
+
+    <p>
+        <strong>Exam note:</strong> Your syllabus requires only the statement
+        and introduction of the Schrödinger wave equation. Detailed derivation
+        is not included here.
+    </p>
+
+    <hr>
+
+    <!-- FORMULA SUMMARY -->
+
+    <h2>7. Important Formula Summary</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Concept</th>
+            <th>Formula</th>
+        </tr>
+
+        <tr>
+            <td>Probability density</td>
+            <td>|ψ|² = ψ*ψ</td>
+        </tr>
+
+        <tr>
+            <td>Probability in one dimension</td>
+            <td>P = ∫ |ψ|² dx</td>
+        </tr>
+
+        <tr>
+            <td>Normalization</td>
+            <td>∫₋∞⁺∞ |ψ|² dx = 1</td>
+        </tr>
+
+        <tr>
+            <td>Position-momentum uncertainty</td>
+            <td>Δx Δp ≥ h/(4π)</td>
+        </tr>
+
+        <tr>
+            <td>Position-velocity uncertainty</td>
+            <td>Δx Δv ≥ h/(4πm)</td>
+        </tr>
+
+        <tr>
+            <td>Energy-time uncertainty</td>
+            <td>ΔE Δt ≥ h/(4π)</td>
+        </tr>
+
+        <tr>
+            <td>Momentum</td>
+            <td>p = mv</td>
+        </tr>
+
+        <tr>
+            <td>Reduced Planck's constant</td>
+            <td>ℏ = h/(2π)</td>
+        </tr>
+
+        <tr>
+            <td>Time-dependent Schrödinger equation</td>
+            <td>iℏ(∂ψ/∂t) = -(ℏ²/2m)∇²ψ + Vψ</td>
+        </tr>
+
+        <tr>
+            <td>Time-independent Schrödinger equation</td>
+            <td>-(ℏ²/2m)∇²ψ + Vψ = Eψ</td>
+        </tr>
+    </table>
+
+    <p>
+        Use h = 6.626 × 10⁻³⁴ J s and ℏ ≈ 1.055 × 10⁻³⁴ J s
+        unless another value is specified.
+    </p>
+
+    <hr>
+
+    <!-- EXACTLY 10 SOLVED NUMERICALS -->
+
+    <h2>8. Solved Numerical Problems</h2>
+
+    <p>
+        These 10 examples cover probability, normalization, uncertainty
+        relations and the Schrödinger equation's basic context.
+    </p>
+
+    <h3>Numerical 1: Calculate Probability Density</h3>
+
+    <p>
+        <strong>Question:</strong> A real wave function has the value
+        ψ = 3 m⁻¹ᐟ² at a particular position. Calculate the probability density.
+    </p>
+
+    <p><strong>Formula:</strong> |ψ|² = ψ²</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>|ψ|² = 3² = 9 m⁻¹</p>
+
+    <p><strong>Answer: 9 m⁻¹</strong></p>
+
+    <h3>Numerical 2: Probability in an Interval</h3>
+
+    <p>
+        <strong>Question:</strong> A particle has a constant probability
+        density of 0.25 m⁻¹ over an interval of length 2 m. Find the
+        probability of finding the particle in this interval.
+    </p>
+
+    <p><strong>Formula:</strong> P = probability density × length</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>P = 0.25 × 2 = 0.5</p>
+
+    <p><strong>Answer: P = 0.5 or 50%</strong></p>
+
+    <h3>Numerical 3: Find the Normalization Constant</h3>
+
+    <p>
+        <strong>Question:</strong> A wave function is ψ(x) = A for
+        0 ≤ x ≤ 2 m and zero elsewhere. Find A.
+    </p>
+
+    <p><strong>Formula:</strong> ∫ |ψ|² dx = 1</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>∫₀² A² dx = 1</p>
+
+    <p>A² [x]₀² = 1</p>
+
+    <p>2A² = 1</p>
+
+    <p>A² = 1/2</p>
+
+    <p>A = 1/√2 m⁻¹ᐟ²</p>
+
+    <p><strong>Answer: A = 1/√2 m⁻¹ᐟ²</strong></p>
+
+    <h3>Numerical 4: Uncertainty in Momentum</h3>
+
+    <p>
+        <strong>Question:</strong> The uncertainty in the position of an
+        electron is 1 × 10⁻¹⁰ m. Find its minimum uncertainty in momentum.
+    </p>
+
+    <p>
+        Given: h = 6.626 × 10⁻³⁴ J s
+    </p>
+
+    <p><strong>Formula:</strong> Δp ≥ h/(4πΔx)</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        Δp ≥ (6.626 × 10⁻³⁴)/(4π × 10⁻¹⁰)
+    </p>
+
+    <p>Δp ≥ 5.27 × 10⁻²⁵ kg m/s</p>
+
+    <p><strong>Answer: Minimum Δp ≈ 5.27 × 10⁻²⁵ kg m/s</strong></p>
+
+    <h3>Numerical 5: Uncertainty in Position</h3>
+
+    <p>
+        <strong>Question:</strong> The minimum uncertainty in an electron's
+        momentum is 1 × 10⁻²⁴ kg m/s. Calculate the minimum uncertainty in position.
+    </p>
+
+    <p><strong>Formula:</strong> Δx ≥ h/(4πΔp)</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        Δx ≥ (6.626 × 10⁻³⁴)/(4π × 10⁻²⁴)
+    </p>
+
+    <p>Δx ≥ 5.27 × 10⁻¹¹ m</p>
+
+    <p><strong>Answer: Minimum Δx ≈ 5.27 × 10⁻¹¹ m</strong></p>
+
+    <h3>Numerical 6: Uncertainty in Velocity</h3>
+
+    <p>
+        <strong>Question:</strong> An electron's position uncertainty is
+        2 × 10⁻¹⁰ m. Find the minimum uncertainty in velocity.
+    </p>
+
+    <p>
+        Given: electron mass m = 9.11 × 10⁻³¹ kg
+    </p>
+
+    <p><strong>Formula:</strong> Δv ≥ h/(4πmΔx)</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        Δv ≥ (6.626 × 10⁻³⁴) /
+        (4π × 9.11 × 10⁻³¹ × 2 × 10⁻¹⁰)
+    </p>
+
+    <p>Δv ≥ 2.90 × 10⁵ m/s</p>
+
+    <p><strong>Answer: Minimum Δv ≈ 2.90 × 10⁵ m/s</strong></p>
+
+    <h3>Numerical 7: Energy Uncertainty</h3>
+
+    <p>
+        <strong>Question:</strong> A quantum state has a characteristic
+        time interval of 1 × 10⁻¹⁵ s. Estimate the energy-time uncertainty
+        scale using ΔE Δt ≥ ℏ/2.
+    </p>
+
+    <p><strong>Formula:</strong> ΔE ≥ ℏ/(2Δt)</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        ΔE ≥ (1.055 × 10⁻³⁴)/(2 × 10⁻¹⁵)
+    </p>
+
+    <p>ΔE ≥ 5.275 × 10⁻²⁰ J</p>
+
+    <p><strong>Answer: ΔE ≥ 5.275 × 10⁻²⁰ J</strong></p>
+
+    <h3>Numerical 8: Convert Energy into Electron Volts</h3>
+
+    <p>
+        <strong>Question:</strong> Convert an energy uncertainty of
+        3.204 × 10⁻¹⁹ J into electron volts.
+    </p>
+
+    <p>
+        Given: 1 eV = 1.602 × 10⁻¹⁹ J
+    </p>
+
+    <p><strong>Formula:</strong> Energy in eV = Energy in joules / (1.602 × 10⁻¹⁹)</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        E = (3.204 × 10⁻¹⁹)/(1.602 × 10⁻¹⁹)
+    </p>
+
+    <p>E = 2 eV</p>
+
+    <p><strong>Answer: 2 eV</strong></p>
+
+    <h3>Numerical 9: Momentum Uncertainty from Velocity Uncertainty</h3>
+
+    <p>
+        <strong>Question:</strong> An electron has a velocity uncertainty
+        of 2 × 10⁵ m/s. Calculate its momentum uncertainty.
+    </p>
+
+    <p>
+        Given: m = 9.11 × 10⁻³¹ kg
+    </p>
+
+    <p><strong>Formula:</strong> Δp = mΔv</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        Δp = 9.11 × 10⁻³¹ × 2 × 10⁵
+    </p>
+
+    <p>Δp = 1.822 × 10⁻²⁵ kg m/s</p>
+
+    <p><strong>Answer: Δp = 1.822 × 10⁻²⁵ kg m/s</strong></p>
+
+    <h3>Numerical 10: Check the Uncertainty Principle</h3>
+
+    <p>
+        <strong>Question:</strong> A particle has position uncertainty
+        Δx = 2 × 10⁻¹⁰ m and momentum uncertainty
+        Δp = 3 × 10⁻²⁵ kg m/s. Check whether these values satisfy
+        the uncertainty principle.
+    </p>
+
+    <p><strong>Condition:</strong> Δx Δp ≥ h/(4π)</p>
+
+    <p><strong>Solution:</strong></p>
+
+    <p>
+        Left side = (2 × 10⁻¹⁰)(3 × 10⁻²⁵)
+    </p>
+
+    <p>Left side = 6 × 10⁻³⁵ J s</p>
+
+    <p>
+        Right side = (6.626 × 10⁻³⁴)/(4π)
+    </p>
+
+    <p>Right side ≈ 5.27 × 10⁻³⁵ J s</p>
+
+    <p>
+        Since 6 × 10⁻³⁵ ≥ 5.27 × 10⁻³⁵, the condition is satisfied.
+    </p>
+
+    <p><strong>Answer: Yes, the values satisfy the uncertainty principle.</strong></p>
+
+    <hr>
+
+    <!-- QUICK REVISION -->
+
+    <h2>9. Quick Revision</h2>
+
+    <ul>
+        <li>Wave function is represented by ψ.</li>
+        <li>|ψ|² represents probability density.</li>
+        <li>Total probability over all space must be 1.</li>
+        <li>Normalization ensures the total probability equals 1.</li>
+        <li>Δx Δp ≥ h/(4π) is the position-momentum uncertainty relation.</li>
+        <li>ΔE Δt ≥ h/(4π) is the commonly used energy-time relation.</li>
+        <li>The Schrödinger equation describes quantum-state evolution.</li>
+        <li>For this syllabus, learn the Schrödinger equation's statement, not its derivation.</li>
+    </ul>
+
+    <hr>
+
+    <p>
+        <a href="physics.html">Back to Module 3</a>
+    </p>
+
+</main>
+<div class="back-button">
+    <a href="physics.html"> Back to physics</a>
+</div>
+
+</body>
+</html>
